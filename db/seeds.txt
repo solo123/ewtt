@@ -54,8 +54,4 @@ id |login_name | email            | password        | password_confirmation
 Model: EmployeeInfo
 id | employee_id | nickname  | status | roles
 1  | 1           | admin emp | 1      | X
-2  | 2           | driver 1  | 1      | 2
-3  | 3           | driver 2  | 1      | 2
-4  | 4           | tour g 1  | 1      | 3
-5  | 5           | tour g 2  | 1      | 3     
 
