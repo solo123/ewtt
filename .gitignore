@@ -16,7 +16,8 @@
 
 /config/database.yml
 /Gemfile*
-/public/*
+/public/assets/*
+/public/system/*
 *.gz
 *.swp
 *~
