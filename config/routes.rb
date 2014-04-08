@@ -1,4 +1,6 @@
 Ewtt::Application.routes.draw do
+  comfy_route :cms_admin, :path => '/cms-admin'
+
   devise_for :employees, :skip => [:registrations]
     as :employee do
       get '/employees/edit' => 'devise/registrations#edit', :as => 'edit_employee_registration'
@@ -10,4 +12,8 @@ Ewtt::Application.routes.draw do
   mount TravelWebsite::Engine, :at => '/'
   mount TravelAdmin::Engine, :at => 'ewtt'
   get :ewtt, :to => 'travel_admin/home#index'
+
+
+  # Make sure this routeset is defined last
+  comfy_route :cms, :path => '/', :sitemap => false
 end
